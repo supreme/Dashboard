@@ -1,0 +1,19 @@
+{
+  "name": "Dashboard",
+  "version": "0.0.1",
+  "description": "WPI student dashboard",
+  "author": "Stephen Andrews",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bookshelf": "^0.10.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "knex": "^0.12.6",
+    "sqlite3": "^3.1.8"
+  }
+}
