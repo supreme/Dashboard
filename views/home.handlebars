@@ -1,12 +1,21 @@
-<div class="row">
+<div class="row dark-bkg">
+    <div class="cold-md-12 quick-links">
+            {{> cards/image-card service='canvas'}}
+            {{> cards/image-card service='banner-web'}}
+            {{> cards/image-card service='org-sync'}}
+            {{> cards/image-card service='exchange'}}
+    </div>
 </div>
 
-<div class="row dark-bkg">
-    <div class="col-md-12 quick-links">
-        {{> components/card}}
-        {{> components/card}}
-        {{> components/card}}
-        {{> components/card}}
+<div class="row">
+    <div class="col-xl-8 col-lg-12 masonry">
+        <div class="card-columns">
+            {{>cards/events-card}}
+            {{>cards/weather-card}}
+            {{#each cards}}
+                {{#compare this.type 'default'}}
+                    {{> cards/card}}                
+                {{/compare}}
+            {{/each}}
     </div>
-<div>
-    
+</div>

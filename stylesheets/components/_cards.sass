@@ -3,16 +3,32 @@
 .dark-bkg
     background-color: rgb(31, 34, 37)
 
+.masonry
+    margin: 0 auto
+    padding-top: 15px
+
 .quick-links
     width: 80%
     margin: 0 auto
-    height: 200px
     display: flex
     justify-content: center
 
-.card
-    +apply-gradient(#e2678f, #fdb88f)
+.link-card
     border: none
     color: #fff
     margin: 15px
     padding: 15px
+    min-width: 250px
+    min-height: 200px
+
+.canvas
+    +gradient-img('../img/canvas.svg', #e2678f, #fdb88f)
+
+.banner-web
+    +gradient-img('../img/banner_web.svg', #FFC371, #FF5F6D)
+
+.org-sync
+    +gradient-img('../img/org_sync.svg', #92d2f3, #403c7f)
+
+.exchange
+    +gradient-img('../img/exchange.svg', #4b6cb7, #182848)

@@ -1,3 +1,7 @@
-=apply-gradient($col1, $col2)
+=gradient($col1, $col2)
     background: -webkit-linear-gradient(left top, $col1, $col2) /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(left top, $col1, $col2) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+=gradient-img($img, $col1, $col2)
+    background: url($img) center center no-repeat, -webkit-linear-gradient(left top, $col1, $col2) /* Chrome 10-25, Safari 5.1-6 */
+    background: url($img) center center no-repeat, linear-gradient(left top, $col1, $col2) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
