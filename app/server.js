@@ -2,7 +2,10 @@
 
 //Configure express
 let express = require('express');
-let app = express();
+let cors = require('cors');
+var app = express();
+app.use(cors());
+
 
 let exphbs = require('express-handlebars');
 let hbs = exphbs.create({
@@ -86,9 +89,9 @@ let cards = [
 ];
 //Setup routes
 app.get('/', (req, res) => {
-  res.render('home', {
+    res.render('home', {
     'cards': cards,
-  });
+    });
 });
 
 //Start server
