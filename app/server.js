@@ -3,14 +3,13 @@
 //Configure express
 let express = require('express');
 let app = express();
-app.set('views',__dirname + '/views')
 
 let exphbs = require('express-handlebars');
 let hbs = exphbs.create({
     defaultLayout: 'main',
-    layoutsDir: 'app/views/layouts',
+    layoutsDir: 'views/layouts',
     partialsDir: [
-        'app/views/partials/'
+        'views/partials/'
     ],
     helpers: {
         compare: function (lvalue, operator, rvalue, options) {
