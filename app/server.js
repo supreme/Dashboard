@@ -1,14 +1,17 @@
 'use strict';
 
 let express = require('express');
-let exphbs = require('express-handlebars');
 
 //Configure express
 let app = express();
+app.set('views',__dirname + '/views')
+
+let exphbs = require('express-handlebars');
 let hbs = exphbs.create({
     defaultLayout: 'main',
+    layoutsDir: 'app/views/layouts',
     partialsDir: [
-        'views/partials/'
+        'app/views/partials/'
     ],
     helpers: {
         compare: function (lvalue, operator, rvalue, options) {
@@ -53,7 +56,7 @@ let hbs = exphbs.create({
 });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 let cards = [
     {

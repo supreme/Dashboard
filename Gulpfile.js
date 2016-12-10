@@ -5,11 +5,11 @@ let sass = require('gulp-sass');
 
 //Build css
 gulp.task('sass', () => {
-    return gulp.src('./stylesheets/**/*.sass')
+    return gulp.src('./app/public/sass/**/*.sass')
             .pipe(sass({outputStyle: 'compressed'}))
-            .pipe(gulp.dest('./public/css/'))
+            .pipe(gulp.dest('./app/public/css/'))
 });
 
 gulp.task('default', () => {
-    gulp.watch('./stylesheets/**/*.sass', ['sass']);
+    gulp.watch('./app/public/sass/**/*.sass', ['sass']);
 });
