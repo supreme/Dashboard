@@ -5,7 +5,7 @@
   "author": "Stephen Andrews",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "cd app && node server.js"
   },
   "dependencies": {
     "bookshelf": "^0.10.2",
