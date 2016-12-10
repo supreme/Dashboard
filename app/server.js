@@ -1,9 +1,11 @@
 'use strict';
 
 let express = require('express');
-
+let phantom = require('phantomjs');
 //Configure express
 let app = express();
+let main = require('./public/scripts/main');
+
 app.set('views',__dirname + '/views')
 
 let exphbs = require('express-handlebars');
@@ -89,8 +91,9 @@ let cards = [
 //Setup routes
 app.get('/', (req, res) => {
   res.render('home', {
-    'cards': cards
+    'cards': cards,
   });
+  //main.scrape(phantom);
 });
 
 //Start server
