@@ -1,12 +1,11 @@
 'use strict';
+const spawn = require('child_process').spawn;
+let tools = require('./tools');
+let events = require('../python/campus_events.json');
 
 //Configure express
 let express = require('express');
-let cors = require('cors');
-var app = express();
-app.use(cors());
-
-
+let app = express();
 let exphbs = require('express-handlebars');
 let hbs = exphbs.create({
     defaultLayout: 'main',
@@ -59,40 +58,25 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.static(__dirname + '/public'));
 
-let cards = [
-    {
-        'type': 'image',
-        'src': '../img/canvas_logo.svg'
-    },
-    {
-        'type': 'image',
-        'src': '../img/canvas_logo.svg'
-    },
-    {
-        'type': 'default',
-        'title': 'F',
-        'content': 'I got twoooooooo versions',
-        'updated-at': '7 mins ago'
-    },
-        {
-        'type': 'default',
-        'title': 'F',
-        'content': 'I got twoooooooo versions',
-        'updated-at': '7 mins ago'
-    },
-        {
-        'type': 'default',
-        'title': 'F',
-        'content': 'I got versions',
-        'updated-at': '7 mins ago'
-    }
-];
 //Setup routes
 app.get('/', (req, res) => {
     res.render('home', {
-    'cards': cards,
+    'cards': tools.getTestData(),
     });
 });
+
+//Runs the python scraper for campus events
+app.get('/update', (req, res) => {
+    tools.fetchCampusEvents(res, spawn);
+});
+
+//API endpoint for a JSON response of campus events
+app.get('/api/events', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(events);
+    res.end();
+});
+
 
 //Start server
 app.listen(process.env.PORT || 3000, () => {
