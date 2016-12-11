@@ -8,8 +8,10 @@
     "start": "cd app && node server.js"
   },
   "dependencies": {
+    "ajax-request": "^1.2.1",
     "bookshelf": "^0.10.2",
     "cheerio": "^0.22.0",
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "gulp": "^3.9.1",
