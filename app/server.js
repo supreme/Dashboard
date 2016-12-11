@@ -2,6 +2,7 @@
 const spawn = require('child_process').spawn;
 let tools = require('./tools');
 let events = require('../python/campus_events.json');
+let db = require('./models/database');
 
 //Configure express
 let express = require('express');
@@ -72,11 +73,20 @@ app.get('/update', (req, res) => {
 
 //API endpoint for a JSON response of campus events
 app.get('/api/events', (req, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.send(events);
-    res.end();
+    db.getEvents(res);
 });
 
+app.get('/test', (req, res) => {
+    db.saveCard(res);
+});
+
+app.get('/test1', (req, res) => {
+    db.getCards(res);
+});
+
+app.get('/events', (req, res) => {
+    db.persistEvents(res, events.toString('utf8'));
+});
 
 //Start server
 app.listen(process.env.PORT || 3000, () => {
