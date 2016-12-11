@@ -10,7 +10,7 @@ module.exports = {
 
         script.stderr.on('data', (data) => {
             response['status'] = 'Error';
-            response['message'] = data;
+            response['message'] = data.toString('utf8');
             res.end(JSON.stringify(response));
         });
 
