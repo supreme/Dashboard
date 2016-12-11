@@ -6,20 +6,19 @@
 module.exports = {
     fetchCampusEvents: (res, spawn) => {
         const script = spawn('sh', ['../python/update.sh']);
-        var output = '';
-
-        script.stdout.on('data', (data) => {
-          console.log(data.toString('utf8'));
-          output += data.toString('utf8');
-        });
+        var response = {}
 
         script.stderr.on('data', (data) => {
-            console.log(`stderr: ${data}`);
+            response['status'] = 'Error';
+            response['message'] = data;
+            res.end(JSON.stringify(response));
         });
 
         script.on('close', (code) => {
-          console.log("Finished: " + code);
-          res.end(output);
+            response['status'] = 'Success';
+            response['message'] = 'Visit /api/events to view data';
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify(response));
         });
     },
     getTestData: () => {
