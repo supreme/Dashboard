@@ -29,11 +29,9 @@ let renderEventCard = (events) => {
   let content = $('#event-card .content');
   for (var e of events) {
     let template = `<div class="event">
-                      <div class="content">
-                        <p class="name">${e.name}</p>
-                        <p class='org text-muted'>${e.org}</p>
-                      </div>
+                      <p class="name">${e.name}</p>
                       <p class="time">${e.time}</p>
+                      <p class='org text-muted'>${e.org}</p>
                     </div>`;
     content.append(template);
   }
@@ -41,7 +39,6 @@ let renderEventCard = (events) => {
 
 let displayEvents = (events) => {
   let todaysEvents = events.filter(getTodaysEvents)
-  console.log(todaysEvents);
   renderEventCard(todaysEvents);
 }
 
