@@ -1,4 +1,4 @@
-/** 
+/**
  * Contains various utility methods.
  * @author Stephen Andrews
  * @since 12.11.16

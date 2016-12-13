@@ -1,112 +1,17 @@
 [
     {
-        "day": "Sunday, December 11, 2016",
-        "errors": [
-            "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
-        ],
-        "events": [
-            {
-                "img": "https://cdn2.orgsync.com/images/os-photos/s1uuvlowqqq3nbo_710.jpg?cover=1&s=90",
-                "name": "Burn the Floor",
-                "org": "Ballroom Dance Team",
-                "time": "2:00 PM - 4:00 PM"
-            }
-        ]
-    },
-    {
-        "day": "Monday, December 12, 2016",
-        "errors": [
-            "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
-        ],
-        "events": [
-            {
-                "img": "https://cdn0.orgsync.com/images/os-photos/rn8natwsvv5tea1_710.jpg?cover=1&s=90",
-                "name": "\"Engineered to Win\" Bracelet Fundraiser",
-                "org": "Cheerleading",
-                "time": "All Day"
-            },
-            {
-                "img": "https://cdn1.orgsync.com/images/os-photos/2xfbnyz44fp5nps_710.jpg?cover=1&s=90",
-                "name": "Coffee and Crepes",
-                "org": "Engineers Without Borders",
-                "time": "9:00 AM - 11:00 PM"
-            },
-            {
-                "img": "https://cdn0.orgsync.com/images/os-photos/d2tfwh5ailkcwvw_710.jpg?cover=1&s=90",
-                "name": "Jeremiah\u2019s Inn - 2016-2017",
-                "org": "Get Involved!",
-                "time": "9:00 AM - 2:00 PM"
-            },
-            {
-                "img": "https://cdn4.orgsync.com/images/os-photos/o9e3ao3rkw4h3yn_710.jpg?cover=1&s=90",
-                "name": "Celebrating 10 Years of the Great Problem Seminar",
-                "org": "Campus Wide Events",
-                "time": "3:00 PM - 5:00 PM"
-            },
-            {
-                "img": "https://cdn2.orgsync.com/images/os-photos/jt5ogsluehlr1mc_710.jpg?cover=1&s=90",
-                "name": "Gingerbread House Making",
-                "org": "Get Involved!",
-                "time": "5:00 PM - 6:30 PM"
-            },
-            {
-                "img": "https://cdn4.orgsync.com/images/os-photos/i1nad6zb6h2623p_710.jpg?cover=1&s=90",
-                "name": "B Term Play Therapy",
-                "org": "Residence Hall Council",
-                "time": "6:00 PM - 8:00 PM"
-            },
-            {
-                "img": "https://cdn1.orgsync.com/images/os-photos/61w0yhpd26rfq4l_710.jpg?cover=1&s=90",
-                "name": "New England Patriots Game: Large Screen Viewing Party",
-                "org": "Get Involved!",
-                "time": "8:00 PM - 10:30 PM"
-            }
-        ]
-    },
-    {
         "day": "Tuesday, December 13, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
             {
-                "img": "https://cdn0.orgsync.com/images/os-photos/rn8natwsvv5tea1_710.jpg?cover=1&s=90",
-                "name": "\"Engineered to Win\" Bracelet Fundraiser",
-                "org": "Cheerleading",
+                "img": "https://cdn1.orgsync.com/images/os-photos/yfyveyqppn1e6rj_710.jpg?cover=1&s=90",
+                "name": "Dave the Baker's Famous POD Cookies on Sale! Stop by Morgan POD!",
+                "org": "Dining Services",
                 "time": "All Day"
-            },
-            {
-                "img": "https://cdn0.orgsync.com/images/os-photos/d2tfwh5ailkcwvw_710.jpg?cover=1&s=90",
-                "name": "Jeremiah\u2019s Inn - 2016-2017",
-                "org": "Get Involved!",
-                "time": "9:00 AM - 2:00 PM"
-            },
-            {
-                "img": "https://cdn3.orgsync.com/images/os-photos/syykoknpq44pcwk_710.jpg?cover=1&s=90",
-                "name": "Habitat for Humanity ReStore - 2016-2017",
-                "org": "Get Involved!",
-                "time": "10:00 AM - 5:00 PM"
-            },
-            {
-                "img": "https://cdn3.orgsync.com/images/os-photos/n3imeiacb2z1iay_710.jpg?cover=1&s=90",
-                "name": "Nutella Fest!",
-                "org": "International Student Council",
-                "time": "11:00 AM - 2:00 PM"
-            },
-            {
-                "img": "https://cdn2.orgsync.com/images/os-photos/eh6r613uonx9xgi_710.jpg?cover=1&s=90",
-                "name": "Hummus Tasting",
-                "org": "Hillel",
-                "time": "12:00 PM - 2:00 PM"
-            },
-            {
-                "img": "https://cdn3.orgsync.com/images/os-photos/nkcqnzbk7p6p3pf_710.jpg?cover=1&s=90",
-                "name": "SIAM Student Speaker: Data Streams and Adaptive Estimation",
-                "org": "Society of Industrial and Applied Mathematics",
-                "time": "4:00 PM - 5:00 PM"
             },
             {
                 "img": "https://cdn3.orgsync.com/images/os-photos/ww08bfjc8x0u6nv_710.jpg?cover=1&s=90",
@@ -119,6 +24,12 @@
                 "name": "Burning the Midnight Oil",
                 "org": "Upsilon Pi Epsilon",
                 "time": "Starts at 8:00 PM"
+            },
+            {
+                "img": "https://cdn4.orgsync.com/images/os-photos/r6k9ne60rgha277_710.jpg?cover=1&s=90",
+                "name": "Tuesday Trivia at The Goat's Head",
+                "org": "Get Involved!",
+                "time": "9:00 PM - 10:30 PM"
             }
         ]
     },
@@ -126,20 +37,21 @@
         "day": "Wednesday, December 14, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
+            {
+                "img": "https://cdn1.orgsync.com/images/os-photos/yfyveyqppn1e6rj_710.jpg?cover=1&s=90",
+                "name": "Dave the Baker's Famous POD Cookies on Sale! Stop by Morgan POD!",
+                "org": "Dining Services",
+                "time": "All Day"
+            },
             {
                 "img": "https://cdn3.orgsync.com/images/os-photos/syykoknpq44pcwk_710.jpg?cover=1&s=90",
                 "name": "Habitat for Humanity ReStore - 2016-2017",
                 "org": "Get Involved!",
                 "time": "10:00 AM - 5:00 PM"
-            },
-            {
-                "img": "https://cdn2.orgsync.com/images/os-photos/6h6gkgcj2bk85l9_710.jpg?cover=1&s=90",
-                "name": "Model U.N Global Awareness Food Event",
-                "org": "Model United Nations",
-                "time": "2:00 PM - 4:00 PM"
             }
         ]
     },
@@ -147,9 +59,16 @@
         "day": "Thursday, December 15, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
+            {
+                "img": "https://cdn1.orgsync.com/images/os-photos/yfyveyqppn1e6rj_710.jpg?cover=1&s=90",
+                "name": "Dave the Baker's Famous POD Cookies on Sale! Stop by Morgan POD!",
+                "org": "Dining Services",
+                "time": "All Day"
+            },
             {
                 "img": "https://cdn0.orgsync.com/images/os-photos/d2tfwh5ailkcwvw_710.jpg?cover=1&s=90",
                 "name": "Jeremiah\u2019s Inn - 2016-2017",
@@ -161,6 +80,12 @@
                 "name": "Habitat for Humanity ReStore - 2016-2017",
                 "org": "Get Involved!",
                 "time": "10:00 AM - 5:00 PM"
+            },
+            {
+                "img": "https://cdn3.orgsync.com/images/os-photos/720chxg09xo6fcc_710.jpg?cover=1&s=90",
+                "name": "Open discussion on conducting literature reviews in System Dynamics",
+                "org": "System Dynamics Club",
+                "time": "3:00 PM - 4:00 PM"
             }
         ]
     },
@@ -168,7 +93,8 @@
         "day": "Friday, December 16, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
             {
@@ -207,7 +133,8 @@
         "day": "Saturday, December 17, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
             {
@@ -228,7 +155,8 @@
         "day": "Monday, December 19, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
             {
@@ -243,7 +171,8 @@
         "day": "Tuesday, December 20, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
             {
@@ -264,7 +193,8 @@
         "day": "Wednesday, December 21, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming"
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
         ],
         "events": [
             {
@@ -272,6 +202,62 @@
                 "name": "Habitat for Humanity ReStore - 2016-2017",
                 "org": "Get Involved!",
                 "time": "10:00 AM - 5:00 PM"
+            }
+        ]
+    },
+    {
+        "day": "Thursday, December 22, 2016",
+        "errors": [
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
+        ],
+        "events": [
+            {
+                "img": "https://cdn0.orgsync.com/images/os-photos/d2tfwh5ailkcwvw_710.jpg?cover=1&s=90",
+                "name": "Jeremiah\u2019s Inn - 2016-2017",
+                "org": "Get Involved!",
+                "time": "9:00 AM - 2:00 PM"
+            },
+            {
+                "img": "https://cdn3.orgsync.com/images/os-photos/syykoknpq44pcwk_710.jpg?cover=1&s=90",
+                "name": "Habitat for Humanity ReStore - 2016-2017",
+                "org": "Get Involved!",
+                "time": "10:00 AM - 5:00 PM"
+            }
+        ]
+    },
+    {
+        "day": "Friday, December 23, 2016",
+        "errors": [
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship"
+        ],
+        "events": [
+            {
+                "img": "https://cdn2.orgsync.com/images/os-photos/c58ysffspk1p8jt_710.jpg?cover=1&s=90",
+                "name": "Yearbook Photo Drop!",
+                "org": "Peddler",
+                "time": "All Day"
+            },
+            {
+                "img": "https://cdn0.orgsync.com/images/os-photos/d2tfwh5ailkcwvw_710.jpg?cover=1&s=90",
+                "name": "Jeremiah\u2019s Inn - 2016-2017",
+                "org": "Get Involved!",
+                "time": "9:00 AM - 2:00 PM"
+            },
+            {
+                "img": "https://cdn3.orgsync.com/images/os-photos/syykoknpq44pcwk_710.jpg?cover=1&s=90",
+                "name": "Habitat for Humanity ReStore - 2016-2017",
+                "org": "Get Involved!",
+                "time": "10:00 AM - 5:00 PM"
+            },
+            {
+                "img": "",
+                "name": "Friday Night Fellowship",
+                "org": "Christian Bible Fellowship",
+                "time": "7:00 PM - 9:00 PM"
             }
         ]
     }

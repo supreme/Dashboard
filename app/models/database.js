@@ -1,7 +1,6 @@
 // Database
 // ========
 // Connect to the relational database
-
 'use strict';
 
 var knex      = require('knex')(require('../knexfile')['development']),
@@ -9,13 +8,12 @@ var knex      = require('knex')(require('../knexfile')['development']),
     fs        = require('fs');
 
 bookshelf.plugin('registry');
-console.log(bookshelf);
 module.exports = bookshelf;
 
 //Data
 //====
 //Add data to database
-let ImageCard = require('./imagecard'); 
+let ImageCard = require('./imagecard');
 let CampusEvent = require('./campusevent');
 module.exports = {
     saveCard: (res) => {
@@ -55,4 +53,3 @@ module.exports = {
         });
     }
 };
-

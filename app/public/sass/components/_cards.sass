@@ -1,5 +1,27 @@
 @import ../mixins
 
 .masonry
-    padding-top: 15px
-    margin: 0 auto
+  padding-top: 15px
+  margin: 0 auto
+
+.card-columns
+    -webkit-column-count: 3
+    -moz-column-count: 3
+    column-count: 3
+
+
+#event-card
+  .event
+    display: flex
+    align-items: flex-start
+
+    .content
+      margin-right: 1em
+
+    .name
+      font-weight: 500
+      margin-bottom: 0px
+
+    .time
+      font-size: 1em
+      align-self: flex-end

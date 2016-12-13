@@ -1,4 +1,5 @@
 app/migrations
+*.pyc
 
 ###############
 #   Node.JS   #

@@ -1,12 +1,17 @@
 'use strict';
-const spawn = require('child_process').spawn;
-let tools = require('./tools');
-let events = require('../python/campus_events.json');
 let db = require('./models/database');
+let events = require('../python/campus_events.json');
+let tools = require('./tools');
+
+//Used to start python script for web scraping
+const spawn = require('child_process').spawn;
 
 //Configure express
 let express = require('express');
 let app = express();
+app.use(express.static(__dirname + '/public'));
+
+//Configure handlebars
 let exphbs = require('express-handlebars');
 let hbs = exphbs.create({
     defaultLayout: 'main',
@@ -23,7 +28,7 @@ let hbs = exphbs.create({
                 throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
             }
 
-            if (options === undefined) {
+          if (options === undefined) {
                 options = rvalue;
                 rvalue = operator;
                 operator = "===";
@@ -57,7 +62,6 @@ let hbs = exphbs.create({
 });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.use(express.static(__dirname + '/public'));
 
 //Setup routes
 app.get('/', (req, res) => {

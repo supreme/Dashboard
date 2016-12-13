@@ -11,15 +11,16 @@
 
 <div class="row">
     <div class="col-lg-8 col-sm-10 col-xs-12 masonry">
-        <div class="card-columns">
-            {{>cards/events-card}}
-            {{#each cards}}
-                {{#compare this.type 'default'}}
-                    {{> cards/card}}                
-                {{/compare}}
-            {{/each}}
-            {{>cards/weather-card}}
-        </div>
+        <div class="row">
+          <div class="card-columns col-lg-12">
+              {{>cards/events-card}}
+              {{>cards/weather-card}}
+              {{#each cards}}
+                  {{#compare this.type 'default'}}
+                      {{> cards/card}}
+                  {{/compare}}
+              {{/each}}
+          </div>
+      </div>
     </div>
 </div>
-
