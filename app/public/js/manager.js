@@ -17,6 +17,7 @@ let isToday = (date) => {
     && today.getMonth() === parsed.getMonth()
     && today.getYear() === parsed.getYear();
 }
+
 /**
  * Event card
  * =======================================
@@ -38,7 +39,7 @@ let getTodaysEvents = (e) => {
  * @param  {Object} events All of the events fetched from the /api/events.
  */
 let displayCampusEvents = (events) => {
-  let todaysEvents = events.filter(getTodaysEvents)
+  let todaysEvents = events.filter(getTodaysEvents);
   let content = $('#event-card .content');
   for (var e of events) {
     let template = `<div class="event">
@@ -57,6 +58,6 @@ $.ajax({
   type: "GET",
   url: '/api/events',
   success: (d) => {
-    displayEvents(d);
+    displayCampusEvents(d);
   }
 });

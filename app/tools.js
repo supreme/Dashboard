@@ -3,6 +3,8 @@
  * @author Stephen Andrews
  * @since 12.11.16
  */
+'use strict';
+
 module.exports = {
     fetchCampusEvents: (res, spawn) => {
         const script = spawn('sh', ['../python/update.sh']);

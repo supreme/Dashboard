@@ -1,4 +1,5 @@
 'use strict';
+
 let db = require('./models/database');
 let events = require('../python/campus_events.json');
 let tools = require('./tools');

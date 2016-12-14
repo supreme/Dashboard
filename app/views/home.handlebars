@@ -1,26 +1,24 @@
 <div class="hero">
-    {{> navbar}}
+  {{> navbar}}
 
-    {{!-- TODO: Replace this with a good looking search --}}
-    <div class="row">
-        <div class="search col-md-6">
-            <input type="text" class="form-control">
-        </div>
+  {{!-- TODO: Replace this with a good looking search --}}
+  <div class="row">
+    <div class="search col-md-6">
+      <input type="text" class="form-control">
     </div>
+  </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-8 col-sm-10 col-xs-12 masonry">
-        <div class="row">
-          <div class="card-columns col-lg-12">
-              {{>cards/events-card}}
-              {{>cards/weather-card}}
-              {{#each cards}}
-                  {{#compare this.type 'default'}}
-                      {{> cards/card}}
-                  {{/compare}}
-              {{/each}}
-          </div>
-      </div>
+  <div class="col-lg-10 masonry">
+    <div class="card-columns">
+      {{>cards/events-card}}
+      {{>cards/weather-card}}
+      {{#each cards}}
+        {{#compare this.type 'default'}}
+          {{> cards/card}}
+        {{/compare}}
+      {{/each}}
     </div>
+  </div>
 </div>
