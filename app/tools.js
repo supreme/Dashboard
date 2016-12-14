@@ -74,24 +74,12 @@ module.exports = {
     },
     getTestData: () => {
         let cards = [
-        {
-            'type': 'default',
-            'title': 'F',
-            'content': 'I got twoooooooo versions',
-            'updated-at': '7 mins ago'
-        },
             {
             'type': 'default',
-            'title': 'F',
-            'content': 'I got twoooooooo versions',
+            'title': 'Qualtrics Survey',
+            'content': '<iframe src="http://wpi.ut1.qualtrics.com/jfe/form/SV_5on8K9X0SwQwztz" name="Qualtrics" scrolling="auto" frameborder="no" align="center" height="280px" width="100%"></iframe>',
             'updated-at': '7 mins ago'
-        },
-            {
-            'type': 'default',
-            'title': 'F',
-            'content': 'I got versions',
-            'updated-at': '7 mins ago'
-        }];
+        },];
         return cards;
     }
 }
