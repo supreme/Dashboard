@@ -1,44 +1,11 @@
 [
     {
-        "day": "Tuesday, December 13, 2016",
-        "errors": [
-            "Missing image for event: Friday Night Fellowship",
-            "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
-        ],
-        "events": [
-            {
-                "img": "https://cdn1.orgsync.com/images/os-photos/yfyveyqppn1e6rj_710.jpg?cover=1&s=90",
-                "name": "Dave the Baker's Famous POD Cookies on Sale! Stop by Morgan POD!",
-                "org": "Dining Services",
-                "time": "All Day"
-            },
-            {
-                "img": "https://cdn3.orgsync.com/images/os-photos/ww08bfjc8x0u6nv_710.jpg?cover=1&s=90",
-                "name": "Physics Tutoring",
-                "org": "Society of Physics Students",
-                "time": "5:00 PM - 11:30 PM"
-            },
-            {
-                "img": "https://cdn2.orgsync.com/images/os-photos/ddguthp0m3g7muj_710.jpg?cover=1&s=90",
-                "name": "Burning the Midnight Oil",
-                "org": "Upsilon Pi Epsilon",
-                "time": "Starts at 8:00 PM"
-            },
-            {
-                "img": "https://cdn4.orgsync.com/images/os-photos/r6k9ne60rgha277_710.jpg?cover=1&s=90",
-                "name": "Tuesday Trivia at The Goat's Head",
-                "org": "Get Involved!",
-                "time": "9:00 PM - 10:30 PM"
-            }
-        ]
-    },
-    {
         "day": "Wednesday, December 14, 2016",
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -46,12 +13,6 @@
                 "name": "Dave the Baker's Famous POD Cookies on Sale! Stop by Morgan POD!",
                 "org": "Dining Services",
                 "time": "All Day"
-            },
-            {
-                "img": "https://cdn3.orgsync.com/images/os-photos/syykoknpq44pcwk_710.jpg?cover=1&s=90",
-                "name": "Habitat for Humanity ReStore - 2016-2017",
-                "org": "Get Involved!",
-                "time": "10:00 AM - 5:00 PM"
             }
         ]
     },
@@ -60,7 +21,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -94,7 +56,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -134,7 +97,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -156,7 +120,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -172,7 +137,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -194,7 +160,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -210,7 +177,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -232,7 +200,8 @@
         "errors": [
             "Missing image for event: Friday Night Fellowship",
             "Missing image for event: Saturday Night Gaming",
-            "Missing image for event: Friday Night Fellowship"
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
         ],
         "events": [
             {
@@ -258,6 +227,29 @@
                 "name": "Friday Night Fellowship",
                 "org": "Christian Bible Fellowship",
                 "time": "7:00 PM - 9:00 PM"
+            }
+        ]
+    },
+    {
+        "day": "Saturday, December 24, 2016",
+        "errors": [
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming",
+            "Missing image for event: Friday Night Fellowship",
+            "Missing image for event: Saturday Night Gaming"
+        ],
+        "events": [
+            {
+                "img": "https://cdn3.orgsync.com/images/os-photos/syykoknpq44pcwk_710.jpg?cover=1&s=90",
+                "name": "Habitat for Humanity ReStore - 2016-2017",
+                "org": "Get Involved!",
+                "time": "10:00 AM - 5:00 PM"
+            },
+            {
+                "img": "",
+                "name": "Saturday Night Gaming",
+                "org": "Game Development Club",
+                "time": "7:00 PM - 11:45 PM"
             }
         ]
     }

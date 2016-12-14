@@ -31,7 +31,7 @@ let writeFile = (dest, content) => {
 }
 
 module.exports = {
-    fetchCampusEvents: (res, spawn) => {
+    fetchCampusEvents: (spawn, callback) => {
         const script = spawn('sh', ['../python/update.sh']);
         var response = {}
 
@@ -44,8 +44,7 @@ module.exports = {
         script.on('close', (code) => {
             response['status'] = 'Success';
             response['message'] = 'Visit /api/events to view data';
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify(response));
+            callback(response);
         });
     },
     fetchDailyHerd: (callback) => {

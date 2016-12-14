@@ -71,7 +71,7 @@ for item in dates:  # <class 'bs4.element.Tag'>
         event_list.events.append(event)
     output.append(event_list.to_json())
 
-with open('campus_events.json', 'w') as f:
+with open('../app/json/campus_events.json', 'w') as f:
     f.write(json.dumps(output, indent=4, sort_keys=True))
 
 browser.close()

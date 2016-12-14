@@ -73,7 +73,10 @@ app.get('/', (req, res) => {
 
 //Runs the python scraper for campus events
 app.get('/scrapers/campusevents', (req, res) => {
-    tools.fetchCampusEvents(res, spawn);
+    tools.fetchCampusEvents(spawn, (data) => {
+      db.persistEvents();
+      res.json(data);
+    });
 });
 
 app.get('/scrapers/dailyherd', (req, res) => {
@@ -89,18 +92,6 @@ app.get('/api/events', (req, res) => {
 
 app.get('/api/daily-herd', (req, res) => {
   db.getDailyHerd(res);
-});
-
-app.get('/test', (req, res) => {
-    db.saveCard(res);
-});
-
-app.get('/test1', (req, res) => {
-    db.getCards(res);
-});
-
-app.get('/events', (req, res) => {
-    db.persistEvents(res, events.toString('utf8'));
 });
 
 app.get('/herd', (req, res) => {

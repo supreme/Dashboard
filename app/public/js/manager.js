@@ -42,10 +42,27 @@ let displayCampusEvents = (events) => {
   let todaysEvents = events.filter(getTodaysEvents);
   let content = $('#event-card .content');
   for (var e of events) {
+    //TODO: Render with handlebars partial
     let template = `<div class="event">
                       <p class="name">${e.name}</p>
                       <p class="time">${e.time}</p>
                       <p class='org text-muted'>${e.org}</p>
+                    </div>`;
+    content.append(template);
+  }
+}
+
+let displayDailyHerd = (articles) => {
+  let content = $('div .card-columns');
+  for (var article of articles) {
+    let date = new Date(article.date).toDateString();
+    let template = `<div class="article card card-inverse">
+                      <img class="card-img img-fluid" src="${article.image}" alt="Card image">
+                      <div class="card-img-overlay">
+                        <h4 class="card-title">${article.title}</h4>
+                        <p class="card-text">${date}</p>
+                        <a href="${article.link}" class="btn btn-primary">Read article</a>
+                      </div>
                     </div>`;
     content.append(template);
   }
@@ -59,5 +76,13 @@ $.ajax({
   url: '/api/events',
   success: (d) => {
     displayCampusEvents(d);
+  }
+});
+
+$.ajax({
+  type: "GET",
+  url: '/api/daily-herd',
+  success: (d) => {
+    displayDailyHerd(d);
   }
 });
