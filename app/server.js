@@ -72,13 +72,23 @@ app.get('/', (req, res) => {
 });
 
 //Runs the python scraper for campus events
-app.get('/update', (req, res) => {
+app.get('/scrapers/campusevents', (req, res) => {
     tools.fetchCampusEvents(res, spawn);
+});
+
+app.get('/scrapers/dailyherd', (req, res) => {
+    tools.fetchDailyHerd(() => {
+      res.end("Successfully scraped the Daily Herd");
+    });
 });
 
 //API endpoint for a JSON response of campus events
 app.get('/api/events', (req, res) => {
     db.getEvents(res);
+});
+
+app.get('/api/daily-herd', (req, res) => {
+  db.getDailyHerd(res);
 });
 
 app.get('/test', (req, res) => {
@@ -91,6 +101,10 @@ app.get('/test1', (req, res) => {
 
 app.get('/events', (req, res) => {
     db.persistEvents(res, events.toString('utf8'));
+});
+
+app.get('/herd', (req, res) => {
+    db.persistDailyHerd(res);
 });
 
 //Start server

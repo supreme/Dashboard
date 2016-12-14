@@ -17,7 +17,15 @@ exports.up = (knex, Promise) => {
             table.string('org');
             table.string('time');
             table.timestamps();
-        })
+        }),
+        knex.schema.createTableIfNotExists('dailyherd', (table) => {
+            table.increments();
+            table.integer('date');
+            table.string('image');
+            table.string('title');
+            table.string('link');
+            table.timestamps();
+        }),
     ]);
 };
 
@@ -25,5 +33,6 @@ exports.down = (knex, Promise) => {
     if (DEV_MODE) {
         knex.schema.dropTableIfExists('imagecards');
         knex.schema.dropTableIfExists('events');
+        knex.schema.dropTableIfExists('dailyherd');
     }
 };
