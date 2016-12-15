@@ -2,6 +2,7 @@
 
 let db = require('./models/database');
 let events = require('../python/campus_events.json');
+let fs = require('fs');
 let tools = require('./tools');
 
 //Used to start python script for web scraping
@@ -60,6 +61,11 @@ app.get('/api/dailyherd', (req, res) => {
   db.getDailyHerd((data) => {
     res.json(data);
   });
+});
+
+//API endpoint for a JSON response of Daily Herd articles
+app.get('/api/mappings', (req, res) => {
+  res.json(JSON.parse(fs.readFileSync('json/mappings.json', 'utf-8')));
 });
 
 //Start server
