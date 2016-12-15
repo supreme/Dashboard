@@ -19,47 +19,7 @@ let hbs = exphbs.create({
     layoutsDir: 'views/layouts',
     partialsDir: [
         'views/partials/'
-    ],
-    helpers: {
-        compare: function (lvalue, operator, rvalue, options) {
-
-            var operators, result;
-
-            if (arguments.length < 3) {
-                throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
-            }
-
-          if (options === undefined) {
-                options = rvalue;
-                rvalue = operator;
-                operator = "===";
-            }
-
-            operators = {
-                '==': function (l, r) { return l == r; },
-                '===': function (l, r) { return l === r; },
-                '!=': function (l, r) { return l != r; },
-                '!==': function (l, r) { return l !== r; },
-                '<': function (l, r) { return l < r; },
-                '>': function (l, r) { return l > r; },
-                '<=': function (l, r) { return l <= r; },
-                '>=': function (l, r) { return l >= r; },
-                'typeof': function (l, r) { return typeof l == r; }
-            };
-
-            if (!operators[operator]) {
-                throw new Error("Handlerbars Helper 'compare' doesn't know the operator " + operator);
-            }
-
-            result = operators[operator](lvalue, rvalue);
-
-            if (result) {
-                return options.fn(this);
-            } else {
-                return options.inverse(this);
-            }
-        }
-    }
+    ]
 });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
@@ -71,31 +31,35 @@ app.get('/', (req, res) => {
     });
 });
 
-//Runs the python scraper for campus events
-app.get('/scrapers/campusevents', (req, res) => {
+//Runs the python scraper for campus events and updates the database records
+app.get('/scrapers/events', (req, res) => {
     tools.fetchCampusEvents(spawn, (data) => {
       db.persistEvents();
       res.json(data);
     });
 });
 
+//Runs the daily herd scraper and updates the database records
 app.get('/scrapers/dailyherd', (req, res) => {
-    tools.fetchDailyHerd(() => {
-      res.end("Successfully scraped the Daily Herd");
+    tools.fetchDailyHerd((data) => {
+      db.persistDailyHerd(() => {
+        res.end(data);
+      });
     });
 });
 
 //API endpoint for a JSON response of campus events
 app.get('/api/events', (req, res) => {
-    db.getEvents(res);
+    db.getEvents((data) => {
+      res.json(data);
+    });
 });
 
-app.get('/api/daily-herd', (req, res) => {
-  db.getDailyHerd(res);
-});
-
-app.get('/herd', (req, res) => {
-    db.persistDailyHerd(res);
+//API endpoint for a JSON response of Daily Herd articles
+app.get('/api/dailyherd', (req, res) => {
+  db.getDailyHerd((data) => {
+    res.json(data);
+  });
 });
 
 //Start server

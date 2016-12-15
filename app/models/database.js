@@ -20,19 +20,6 @@ let CampusEvent = require('./campusevent');
 let HerdArticle = require('./herdarticle');
 
 module.exports = {
-  saveCard: (res) => {
-    let card = new ImageCard();
-    card.set('text', 'Lol gotcha fag `121`21`');
-    card.set('url', 'http://google.com');
-    card.save().then((u) => {
-      res.end("Successfully added image card!");
-    });
-  },
-  getCards: (res) => {
-    ImageCard.collection().fetch().then((cards) => {
-      res.json(cards.toJSON());
-    });
-  },
   persistEvents: () => {
     let path = appRoot + '/json/campus_events.json';
     let json = JSON.parse(fs.readFileSync(path, 'utf8'));
@@ -51,12 +38,12 @@ module.exports = {
       }
     }
   },
-  getEvents: (res) => {
+  getEvents: (callback) => {
     CampusEvent.collection().fetch().then((events) => {
-      res.json(events.toJSON());
+      callback(events.toJSON());
     });
   },
-  persistDailyHerd: (res) => {
+  persistDailyHerd: (callback) => {
     let path = appRoot + '/json/daily_herd.json';
     let json = JSON.parse(fs.readFileSync(path), 'utf8');
     for (var item of json) {
@@ -69,11 +56,12 @@ module.exports = {
         console.log(`Saved: ${a}`);
       });
     }
-    res.send("Successfully persisted daily herd articles");
+
+    callback();
   },
-  getDailyHerd: (res) => {
+  getDailyHerd: (callback) => {
     HerdArticle.collection().fetch().then((articles) => {
-      res.json(articles.toJSON());
+      callback(articles.toJSON());
     });
   }
 };

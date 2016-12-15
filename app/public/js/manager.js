@@ -81,7 +81,7 @@ $.ajax({
 
 $.ajax({
   type: "GET",
-  url: '/api/daily-herd',
+  url: '/api/dailyherd',
   success: (d) => {
     displayDailyHerd(d);
   }

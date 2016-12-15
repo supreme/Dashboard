@@ -16,9 +16,7 @@
       {{> cards/weather-card}}
       {{> cards/twitter-card}}
       {{#each cards}}
-        {{#compare this.type 'default'}}
           {{> cards/card}}
-        {{/compare}}
       {{/each}}
     </div>
   </div>
