@@ -1,6 +1,31 @@
 # Dashboard
 A WPI dashboard that scrapes various school resources and presents them in a single place. The only developer was myself, Stephen Andrews.
 
+Overall the dashboard turned out pretty good. This was a considerably large project for a single person so I'm happy with the current state. Most of the code is documented well. 
+
+Features - 
++ ES6!!!!
++ SASS styling
++ Handlebars templating
++ 2 web scrapers
++ Easy to extend design
+
+Known 'bugs' -
++ Performance on mobile devices needs improvement. Most of the site responds to resizing browsers well, but when viewing on phones the navbar appears wrong. Ideally I would like to have a separate stylesheet entirely for mobile devices but I simply did not have enough time to do this.
++ The scraper written in JavaScript will work fine if you visit the endpoint for it, but the Python one will not when deployed. This script would normally be run on as a cron job but I didn't have enough time to look into it for heroku.
++ Didn't finish adding the links to the search but they are configured in mappings.json
+
+## Getting started
+Pre-reqs
++ knex
++ sqlite3
+
+1. `npm install --save`
+1. `knex init`
+1. `knex migrate:latest`
+1. `cd app`
+1. `node server.js`
+
 ## Routes
  + `/` - Main dashboard view 
 
