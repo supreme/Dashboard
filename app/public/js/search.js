@@ -28,6 +28,7 @@ $(document).ready(() => {
 
   search.on('focus', () => {
     console.log('click');
+    $('.typeahead').css('min-width', search.width() + 25);
     $('.typeahead').css('display', 'block');
   });
 
